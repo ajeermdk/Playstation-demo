@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Assets/Css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/f78aa74925.js" crossorigin="anonymous"></script>
+
+
+</head>
+
+<body>
+
+
+
+    <div class="main">
+
+        <nav>
+            <div class="xs-nav navbar navbar-light d-flex d-sm-flex d-md-none d-lg-none d-xl-none">
+                <div class="inner-div-xs-nav">
+                    <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarMenu">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="display-menu-xs">
+                        
+                    </div>
+                    <i class="fas fa-search"></i>
+                </div>
+
+                <a href="#" class="nav-link"><img class="nav-item" src="Assets/Images/PlayStation-Icon-Logo.wine.svg"
+                        alt=""></a>
+                <button type="button" class="btn btn-dark">Sign in</button>
+
+
+            </div>
+            <div class="d-none d-sm-none d-md-block d-lg-block d-xl-block top-bar" >
+                <a href="#"><img src="Assets/Images/sony-logo.png" alt=""></a>
+
+            </div>
+
+
+            <div class=" middle-bar d-none d-sm-none d-md-flex d-lg-flex d-xl-flex " id="mid-bar">
+
+                <div class=" middle-bar-1">
+
+                    <a href="#" class="nav-link"><img class="nav-item"
+                            src="Assets/Images/PlayStation-Icon-Logo.wine.svg" alt=""></a>
+                    <div class="dropdown" data-dropdown>
+                        <button class="btn-middle-bar-1 nav-item" data-dropdown-button>Games <img
+                                src="Assets/Images/dropdown-arrow.png" alt=""></button>
+                        <div class="dropdown-menu-aj">
+                            <div class="inner-bag">
+                                <div class="dropdown-menu-inner">
+                                    <img src="Assets/Images/navbar-imgs/ps5.png" class="img-inner-drp" alt="">
+                                    <p>PS5</p>
+                                </div>
+                                <div class="dropdown-menu-inner">
+                                    <img src="Assets/Images/navbar-imgs/ps4.png" class="img-inner-drp" alt="">
+                                    <p>PS4</p>
+                                </div>
+                                <div class="dropdown-menu-inner">
+                                    <img src="Assets/Images/navbar-imgs/ps vr.png" class="img-inner-drp" alt="">
+                                    <p>PS VR</p>
+                                </div>
+                                <div class="dropdown-menu-inner">
+                                    <img src="Assets/Images/navbar-imgs/—Pngtree—button plus icon_3566859.jpg"
+                                        class="img-inner-drp" alt="">
+                                    <p>PS Plus</p>
+                                </div>
+                                <div class="dropdown-menu-inner">
+                                    <img src="Assets/Images/navbar-imgs/ps store.png" class="img-inner-drp" alt="">
+                                    <p>Buy</p>
+                                </div>
+                                <hr>
+                                <ul>
+                                    <li>PlayStation Indies</li>
+                                    <li>PS4 games on PS5</li>
+                                    <li>Free to Play</li>
+                                    <li>Deals & offers</li>
+                                </ul>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="dropdown" data-dropdown>
+                        <button class="btn-middle-bar-1 nav-item" data-dropdown-button>Hardwares <img
+                                src="Assets/Images/dropdown-arrow.png" alt=""></button>
+                        <div class="dropdown-menu-aj">
+                            Hardwares
+                        </div>
+                    </div>
+                    <div class="dropdown" data-dropdown>
+                        <button class="btn-middle-bar-1 nav-item" data-dropdown-button>Services <img
+                                src="Assets/Images/dropdown-arrow.png" alt=""></button>
+                        <div class="dropdown-menu-aj">
+                            Services
+                        </div>
+                    </div>
+                    <div class="dropdown" data-dropdown>
+                        <button class="btn-middle-bar-1 nav-item" data-dropdown-button>News <img
+                                src="Assets/Images/dropdown-arrow.png" alt=""></button>
+                        <div class="dropdown-menu-aj">
+                            News
+                        </div>
+                    </div>
+                    <div class="dropdown" data-dropdown>
+                        <button class="btn-middle-bar-1 nav-item" data-dropdown-button>Shop <img
+                                src="Assets/Images/dropdown-arrow.png" alt=""></button>
+                        <div class="dropdown-menu-aj">
+                            Shop
+                        </div>
+                    </div>
+                    <div class="dropdown" data-dropdown>
+                        <button class="btn-middle-bar-1 nav-item" data-dropdown-button>Support <img
+                                src="Assets/Images/dropdown-arrow.png" alt=""></button>
+                        <div class="dropdown-menu-aj">
+                            Support
+                        </div>
+                    </div>
+                </div>
+                <div class=" navbar-light d-none d-sm-none d-md-flex d-lg-flex d-xl-flex middle-bar-2" id="search-sign">
+                    <div class="search">
+                        <button onclick="showHide()">
+                            <i class="fas fa-search"></i>
+                        </button>
+                        <div class="searchBar" id="searchBar">
+                            <select>
+                                <option value="">Playstation.com</option>
+                                <option value="">Playstation.store</option>
+                            </select>
+                            <input type="text" placeholder="Search PlayStation.com">
+                            <button>
+                                <i class="fas fa-search"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <button type="button" class="btn btn-dark">Sign in</button>
+
+
+
+                </div>
+
+
+            </div>
+
+        </nav>
+        <div id="myCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="5000">
+            <ol class="carousel-indicators">
+                <li data-bs-target="#myCarousel" data-bs-slide-to="0" class="active"></li>
+                <li data-bs-target="#myCarousel" data-bs-slide-to="1"></li>
+                <li data-bs-target="#myCarousel" data-bs-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active" style="background-image: url(Assets/Images/horizon-bg.jpg);">
+
+                    <div class="banner-sm d-block d-sm-block d-md-none d-lg-none d-xl-none"></div>
+                    <div class="d-block d-sm-block d-md-none d-lg-none d-xl-none bag ">
+
+                        <img src="Assets/Images/pngfind.com-horizon-zero-dawn-png-1570431.png" alt="" class="img-fluid">
+                        <h1>Example headline</h1>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                            has
+                            been
+                            the
+                            industry's standard</p>
+                        <button class="carousel-btn1">Pre-order now</button>
+                    </div>
+
+                    <div class="banner-1 d-none d-sm-none d-md-block d-lg-block d-xl-block "></div>
+                    <div class="container d-none d-sm-none d-md-block d-lg-block d-xl-block ">
+
+                        <img src="Assets/Images/pngfind.com-horizon-zero-dawn-png-1570431.png" alt="" class="img-fluid">
+                        <h1>Example headline</h1>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                            has
+                            been
+                            the
+                            industry's standard</p>
+                        <button class="carousel-btn1">Pre-order now</button>
+                    </div>
+                </div>
+                <div class="carousel-item"
+                    style="background-image: url(Assets/Images/pubg-playerunknowns-battlegrounds-z5639.jpg);">
+
+                    <div class="banner-sm d-block d-sm-block d-md-none d-lg-none d-xl-none"></div>
+                    <div class="d-block d-sm-block d-md-none d-lg-none d-xl-none bag ">
+                        <img src="Assets/Images/pubg-10188.png" alt="" class="img-fluid">
+                        <h1>Example headline</h1>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                            has
+                            been
+                            the
+                            industry's standard</p>
+                        <a href="#" class="btn btn-lg btn-primary">
+                            Sign in
+                        </a>
+                    </div>
+
+                    <div class="banner-2 d-none d-sm-none d-md-block d-lg-block d-xl-block"></div>
+                    <div class="container d-none d-sm-none d-md-block d-lg-block d-xl-block ">
+                        <img src="Assets/Images/pubg-10188.png" alt="" class="img-fluid">
+                        <h1>Example headline</h1>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                            has
+                            been
+                            the
+                            industry's standard</p>
+                        <a href="#" class="btn btn-lg btn-primary">
+                            Sign in
+                        </a>
+                    </div>
+                </div>
+                <div class="carousel-item" style="background-image: url(Assets/Images/slide-1.jpg);">
+
+                    <div class="banner-sm d-block d-sm-block d-md-none d-lg-none d-xl-none"></div>
+                    <div class="d-block d-sm-block d-md-none d-lg-none d-xl-none bag">
+                        <img src="Assets/Images/Uncharted_logo.png" alt="" class="img-fluid">
+                        <h1>Example headline</h1>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                            has
+                            been
+                            the
+                            industry's standard</p>
+                        <a href="#" class="btn btn-lg btn-primary">
+                            Sign in
+                        </a>
+                    </div>
+
+                    <div class="banner-3 d-none d-sm-none d-md-block d-lg-block d-xl-block"></div>
+                    <div class="container d-none d-sm-none d-md-block d-lg-block d-xl-block">
+                        <img src="Assets/Images/Uncharted_logo.png" alt="" class="img-fluid">
+                        <h1>Example headline</h1>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                            has
+                            been
+                            the
+                            industry's standard</p>
+                        <a href="#" class="btn btn-lg btn-primary">
+                            Sign in
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="controller-bg-main container-fluid">
+            <div class="inner-div d-none d-sm-none d-md-flex d-lg-flex d-xl-flex">
+                <img src="Assets/Images/button-imgs/1082417.jpg" alt="">
+                <img src="Assets/Images/button-imgs/81bRacT8elL._SX450_.jpg" alt="">
+                <img src="Assets/Images/button-imgs/uncharted.jpg" alt="">
+            </div>
+
+            <div class="inner-div-2 d-flex d-sm-flex d-md-none d-lg-none d-xl-none ">
+                <img src="Assets/Images/button-imgs/1082417.jpg" alt="">
+                <img src="Assets/Images/button-imgs/81bRacT8elL._SX450_.jpg" alt="">
+                <img src="Assets/Images/button-imgs/uncharted.jpg" alt="">
+            </div>
+
+        </div>
+        <div class="sec-container">
+            <div class="banner d-block d-sm-block"></div>
+            <div class="inner-div">
+                <h1>Example headline</h1>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                    been
+                    the
+                    industry's standard</p>
+                <a href="#" class="btn btn-lg btn-primary">
+                    Sign in
+                </a>
+            </div>
+
+            <div class="inner-div-2 col-6 col-sm-12 d-sm-flex pl-0 pl-sm-5 ">
+                <div class="single-div ">
+                    <img src="Assets/Images/button-imgs/playstation-11.jpg" alt="">
+                    <p>Lorem Ipsum is simply dummy text of the printing</p>
+                </div>
+                <div class="single-div">
+                    <img src="Assets/Images/button-imgs/playstation-14.jpg" alt="">
+                    <p>Lorem Ipsum is simply dummy text of the printing</p>
+                </div>
+                <div class="single-div">
+                    <img src="Assets/Images/button-imgs/playstation-16.jpg" alt="">
+                    <p>Lorem Ipsum is simply dummy text of the printing</p>
+                </div>
+            </div>
+            <div class="banner-d d-block d-sm-none"></div>
+            <div class="playstation-plus d-none d-sm-block">
+                <div class="container-plus d-none d-sm-none d-md-block d-lg-block d-xl-block ">
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                        been
+                        the
+                        industry's standard</p>
+                    <a href="#" class="btn btn-lg btn-primary">
+                        Sign in
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="footer ">
+            <div class="inner-div-ftr">
+                <div class="inner-div-p1 ">
+                    <img src="Assets/Images/toppng.com-vector-free-download-playstation-it-is-a-playstation-playstation-logo-white-318x243.png"
+                        alt="">
+                    <p>Country / Region: India</p>
+                </div>
+                <div class="inner-div-p2 container-fluid ">
+                    <ul>
+                        <li>Support</li>
+                        <li>Privacy and cookies</li>
+                        <li>Website terms of use</li>
+                        <li>PlayStation Studios</li>
+                        <li>Legal</li>
+                        <li>About SIE</li>
+                        <li>PlayStation and the</li>
+                        <li>environment</li>
+                    </ul>
+                    <ul>
+                        <li>PSN terms of</li>
+                        <li>service</li>
+                        <li>PS Store cancella-</li>
+                        <li>tion policy</li>
+                        <li>Health warning</li>
+                        <li>Age ratings</li>
+                        <li>Software Usage</li>
+                        <li>Terms</li>
+                        <li>PlayStation careers</li>
+                        <li>Site map</li>
+                    </ul>
+                    <ul>
+                        <li>Facebook</li>
+                        <li>Twitter</li>
+                        <li>YouTube</li>
+                        <li>Instagram</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="bottom-div d-none d-sm-block">
+                <img src="Assets/Images/sie.svg" alt="">
+                <p>Website ©2022 Sony Interactive Entertainment Europe Limited. All content, games titles, trade
+                    names
+                    and/or trade dress, trademarks, artwork and associated imagery are trademarks and/or copyright
+                    material of their respective owners. All rights reserved.<u>More info</u> </p>
+            </div>
+            <div class="bottom-div2 d-block d-sm-none">
+                <img src="Assets/Images/sie.svg" alt="">
+                <p>Website ©2022 Sony Interactive Entertainment Europe Limited. All content, games titles, trade
+                    names
+                    and/or trade dress, trademarks, artwork and associated imagery are trademarks and/or copyright
+                    material of their respective owners. All rights reserved.<u>More info</u> </p>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+    <script src="Assets/JS/index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+        integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+        integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

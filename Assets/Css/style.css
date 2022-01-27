@@ -1,0 +1,550 @@
+
+html,body{
+    font-family: sst,helvetica,arial,sans-serif;
+    
+    margin:0; /* remove default margin */
+    padding:0; /* remove default padding */
+    width:100%; /* take full browser width */
+    height:100%; /* take full browser height*/
+    overflow: auto;
+    margin: auto;
+    position: absolute; 
+    overflow-x: hidden;  
+}
+
+.top-bar{
+    width: 100%;
+    height: 36px;
+    position: fixed;
+    background-color: black;
+    text-align: right;
+    z-index: 2;
+
+}
+.dropdown{
+    position: relative;
+}
+.dropdown-menu-aj{
+    display: flex;
+    position: absolute;
+    z-index: 1000;
+    min-width: 114rem;
+    padding: 10px 298px;
+    margin-left:  -412px;
+    margin-top: 15px;
+    height: 0;
+    font-size: 1rem;
+    color: #212529;
+    text-align: left;
+    list-style: none;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: none;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .1);
+    opacity: 0;
+    transition: height 350ms ease-in-out;
+}
+.dropdown.active > button + .dropdown-menu-aj{
+    opacity: 1;
+    height: 260px;
+}
+.inner-bag{
+    width: 35%;
+    height: 200px;
+    display: flex;
+    margin-left: 324px;
+}
+.dropdown-menu-inner{
+    width: 0;
+    height: 0;
+    border-radius: 5px;
+    border: none;
+    margin-left: 20px;
+    display: flex;
+    transition: height 350ms ease-in-out, width 350ms ease-in-out;
+    cursor: pointer;
+}
+.dropdown-menu-inner:hover{
+    transition: 150ms;
+    box-shadow: 1.5px 3.5px 10.8px #adacac;
+}
+.dropdown.active > button + .dropdown-menu-aj .dropdown-menu-inner{
+    width: 407px;
+    height: 140px;
+}
+.dropdown-menu-inner .img-inner-drp{
+    width: 100%;
+    padding: 40px 47px;
+}
+.dropdown-menu-inner p{
+    position: absolute;
+    bottom: 100px;
+    padding-left: 57px;
+    font-weight: 600;
+    font-size: 19px;
+    opacity: 0;
+    transition: opacity 450ms ease-in-out;
+}
+.dropdown.active > button + .dropdown-menu-aj .dropdown-menu-inner p{
+    opacity: 1;
+}
+.dropdown-menu-aj .inner-bag hr{
+    color: #898989f5;
+    position: absolute;
+    top: 183px;
+    width: 100%;
+    opacity: 0;
+    margin-left: -312px;
+    transition: opacity 650ms ease-in-out;
+}
+.dropdown.active > button + .dropdown-menu-aj .inner-bag hr{
+    opacity: 50%;
+}
+.dropdown-menu-aj .inner-bag ul{
+    position: absolute;
+    display: flex;
+    margin-top: 205px;
+    margin-left: 17px;
+    font-size: 17px;
+    font-weight: 700;
+    cursor: pointer;
+    list-style: none;
+    opacity: 0;
+    transition: opacity 550ms ease-in-out;
+}
+.dropdown.active > button + .dropdown-menu-aj .inner-bag ul{
+    opacity: 1;
+}
+.dropdown-menu-aj .inner-bag li::before{
+    content: "\2022";
+    font-size: 32px;
+    display: inline-block;
+    width: 19px;
+    color: #2a6ecd;
+    margin-top: -15px;
+}
+.dropdown-menu-aj .inner-bag li{
+    margin-left: 40px;
+}
+.dropdown-menu-aj .inner-bag li:hover{
+    color: #2a6ecd;
+}
+.top-bar img{
+    width: 79px;
+    height: 15px;
+    margin: 8px 8px;
+   
+}
+.middle-bar{
+    margin: 0px 0px 0px 10px;
+    height: 62px;
+    position: fixed;
+    top: 35px;
+    background: white;
+    z-index: 2;
+    width: 101.34%;
+    margin-left: -9px;
+    
+}
+.middle-bar img{
+    width: 47px;
+}
+.middle-bar button img{
+    width: 10px;
+    opacity: 60%;
+}
+.middle-bar-1{
+    display: flex;
+    flex-direction: row;
+}
+.btn-middle-bar-1{
+    border: none;
+    background-color: white;
+    opacity: 70%;
+    font-size: 12px;
+    cursor: pointer;
+    font-weight: 500;
+    margin-top: 13px;
+}
+.btn-middle-bar-1:hover{
+    color: rgb(5, 5, 145);
+}
+.navbar-toggler-icon{
+    font-size: 16px;
+    
+    
+}
+.navbar-toggler{
+    width: 47px;
+    margin-left: 5px;
+    padding-left: 8px;
+    
+}
+.middle-bar-2{
+    display: flex;
+    flex-direction: row-reverse;
+    
+}
+.middle-bar-2 .btn{
+    margin-right: 23px;
+    height: 24px;
+    padding-top: 0px;
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    border-radius: 18px;
+}
+.middle-bar-2 .btn:hover{
+    opacity: 80%;
+    
+}
+.xs-nav .fas{
+    margin-left: 19px;
+    cursor: pointer;
+    margin-top: 10px;
+    
+}
+.xs-nav img{
+    width: 71px;
+    display: flex;    
+}
+.xs-nav .btn{
+    margin-right: 23px;
+    height: 24px;
+    padding-top: 0px;
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    border-radius: 18px;
+}
+.xs-nav .btn:hover{
+    opacity: 80%;
+}
+.img-container {
+    display: inline-block;
+    position: relative;
+}
+.positioning{
+    position: absolute;
+    bottom: 0;
+    color: white;
+    padding: 77px;
+    font-size: 17px;
+    line-height: 18px;
+}
+.positioning img{
+    width: 30%;
+}
+.positioning-p2{
+    line-height: 26px;
+}
+.positioning-2{
+    position: absolute;
+    bottom: 0;
+    color: white;
+    font-size: 17px;
+    line-height: 18px;
+    padding-left: 24%;
+
+}
+.positioning-2 img{
+    width: 70%;
+}
+.img-container-2{
+    display: inline-block;
+    position: relative;
+    align-items: center;
+}
+.carousel-item{
+    height: 32rem;
+    color: white;
+    background-position: center;
+    background-size: cover;
+    transition: transform 2.6s ease-in-out;
+    
+}
+.carousel-fade .active.carousel-item-start,
+.carousel-fade .active.carousel-item-end {
+  transition: opacity 0s 2.6s;
+}
+.carousel-item .container{
+    width: 40%;
+    margin: 0;
+    left: 6%;
+}
+.container{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding-bottom: 50px;
+
+}
+.container .img-fluid{
+    max-width: 50%;
+}
+.carousel-btn1{
+    width: 129px;
+    height: 33px;
+    font-size: 15px;
+    background: #cd3d0f;
+    color: white;
+    border: none;
+    font-weight: 600;
+    border-radius: 32px;
+}
+.banner-1{
+    width: 38%;
+    left: 0;
+    height: 512px;
+    position: absolute;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.863), rgba(0, 0, 0, 0));
+    
+}
+.banner-2{
+    width: 38%;
+    left: 0;
+    height: 512px;
+    position: absolute;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.863), rgba(0, 0, 0, 0));
+
+}
+.banner-3{
+    width: 38%;
+    left: 0;
+    height: 512px;
+    position: absolute;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.753), rgba(0, 0, 0, 0));
+
+}
+.banner-sm{
+    width: 100%;
+    height: 81%;
+    margin-top: 100px;
+    background: linear-gradient(to top, rgb(0, 0, 0), rgba(0, 0, 0, 0));
+  
+}
+.carousel-item .bag{
+    width: 53%;
+    margin: 0;
+    left: 22%;
+    text-align: center;
+}
+.bag{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding-bottom: 50px;
+}
+.controller-bg-main{
+    width: 100%;
+    height: 170px;
+    /* overflow: hidden; */
+}
+.controller-bg-main .inner-div{
+    width: 66%;
+    height: 170px;
+    margin: -1px 294px auto;
+}
+.controller-bg-main .inner-div img{
+    width: 180px;
+    margin: 4% 41px;
+    border-radius: 15px;
+}
+.controller-bg-main .inner-div-2{
+    width: 90%;
+    height: 133px;
+    margin: 5px -145px auto;
+}
+.controller-bg-main .inner-div-2 img{
+    width: 180px;
+    margin: 4% 55px;
+    border-radius: 15px;
+}
+.sec-container{
+    background-image: url(/Assets/Images/call_of_duty_black_ops_2_game_2013-wallpaper-1920x1080.jpg);
+    /* background-repeat:no-repeat;
+    background-size:contain; */
+    background-position: center;
+    position: absolute;
+    background-size: cover;
+    height:759px;width:100%;
+    margin-top: 18px;
+    
+}
+.banner{
+    width: 100%;
+    position: absolute;
+    height: 81%;
+    margin-top: 144px;
+    background: linear-gradient(to top, rgb(30 8 12), rgba(0, 0, 0, 0));
+}
+.sec-container .inner-div{
+    width: 34%;
+    margin-left: 10%;
+    margin-top: 13%;
+    color: white;
+    position: relative;
+}
+.inner-div-2{
+    width: 774px;
+    height: 200px;
+    margin: 147px auto;
+    padding-left: 37px;
+    position: relative;
+}
+.inner-div-2 .single-div{
+    width:100%;
+    height: 180px;
+    color: white;
+    padding-left: 7px;
+    
+}
+.inner-div-2 .single-div img{
+    width: 200px;
+    border-radius: 14px;
+    transition: transform .3s;;
+}
+.inner-div-2 .single-div img:hover{
+    transform: scale(1.04);
+}
+.single-div p{
+    font-weight: 600;
+}
+.playstation-plus{
+    background-image: url(/Assets/Images/ps-plus-august-2019-mistake-1024x440.jpg);
+    width: 100%;
+    height: 380px;
+    margin-top: -102px;
+    align-items: center;
+    position: relative;
+    background-position: center;
+    background-size: cover;
+
+}
+.playstation-plus .container-plus{
+    position: absolute;
+    width: 31%;
+    margin-top: 5%;
+    color: white;
+    left: 5%;
+}
+.footer{
+    color: #fff;
+    background: #00439c;
+    width: 100%;
+    height: 676px;
+    position: relative;
+    margin-top: 1190px;
+    bottom: 0;
+    /* bottom: -2253px; */
+    /* background-position: center; */
+    /* background-size: cover; */
+}
+.inner-div-ftr{
+    width: 80%;
+    height: 400px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    padding-top: 30px;
+}
+.inner-div-p1{
+    width: 43%;
+    height: 400px;
+}
+.inner-div-p2{
+    width: 57%;
+    display: flex;
+}
+.inner-div-p1 img{
+    width: 100px;
+}
+.inner-div-p1 p{
+    padding-top: 10px;
+}
+.inner-div-p2 ul li{
+    list-style: none;
+    cursor: pointer;
+    line-height: 27px;
+}
+.bottom-div img{
+    width: 125px;
+}
+.bottom-div{
+    width: 35%;
+    margin: -15px 86px auto;
+}
+.bottom-div2{
+    width: 70%;
+    margin: 40px 45px auto;
+    font-size: 13px;
+}
+.bottom-div2 img{
+    width: 111px;
+}
+.banner-d{
+    width: 100%;
+    margin-top: -94px;
+    height: 400px;
+    background-color: #1f090d;
+}
+
+.search button{
+    border: none;
+    background-color: white;
+}
+.search .searchBar{
+    display: none;
+    position: absolute;
+    right: 22px;
+    top: -1px;
+    width: 721px;
+    z-index: 9;
+    box-shadow: 0px 0px 1px 5000px rgba(0,0,0,0.8);
+}
+.searchBar input{
+    margin-left: -5px;
+    width: 447px;
+    height: 72px;
+    padding-top: 4px;
+    padding-left: 23px;
+    border: none;
+    border-left: 1px solid rgba(56, 56, 56, 0.226);
+    outline: none;
+}
+.searchBar input::placeholder{
+    font-size: 23px;
+    font-weight: 300;
+}
+.searchBar select{
+    height: 72px;
+    width: 214px;
+    padding-left: 26px;
+    font-size: 20px;
+    color: #000000b8;
+    font-weight: 400;
+    border: none;
+}
+.searchBar button{
+    height: 72px;
+    padding-top: 5px;
+    width: 75px;
+    margin-left: -19px;
+    background: #0172ce;
+}
+.searchBar button .fas{
+    color: white;
+    font-size: 21px;
+}
+#search-sign{
+    margin: 18px;
+    flex: auto;
+}
+.inner-div-xs-nav{
+    display: flex;
+}
+.display-menu-xs{
+
+}
